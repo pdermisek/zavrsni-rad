@@ -1,0 +1,19 @@
+@import '../base/mixins';
+
+.loader-container {
+  @include flex-center;
+  padding: 20px;
+
+  .loader {
+    border: $loader-border solid #f3f3f3;
+    border-top: $loader-border solid $accent;
+    border-radius: 50%;
+    width: $loader-size;
+    height: $loader-size;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

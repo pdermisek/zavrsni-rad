@@ -1,0 +1,113 @@
+* {
+  background-color: yellowgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #222;
+}
+
+p {
+  font-size: larger;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.grid-gallery .grid-item {
+  background: #90caf9;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.transition-btn {
+  background: #fff;
+  color: #3f51b5;
+  border: 2px solid #3f51b5;
+  padding: 10px 20px;
+  transition: background 0.3s, color 0.3s;
+}
+.transition-btn:hover {
+  background: #3f51b5;
+  color: #fff;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 20px;
+}
+.loader-container .loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3f51b5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.blur-img {
+  transition: filter 0.3s;
+  width: 200px;
+  height: 250px;
+}
+.blur-img:hover {
+  filter: blur(3px);
+}
+
+.blend-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 20px;
+}
+.blend-container .blend-bg {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+.blend-container .blend-bg .blend-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: blue;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}/*# sourceMappingURL=stil.css.map */

@@ -1,0 +1,9 @@
+.blur-img {
+  transition: filter 0.3s;
+  width: 200px;
+  height: 250px;
+
+  &:hover {
+    filter: blur(3px);
+  }
+}

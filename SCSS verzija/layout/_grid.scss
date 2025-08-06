@@ -1,0 +1,17 @@
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, $grid-col-width);
+  gap: $gallery-gap;
+  justify-content: center;
+  align-items: center;
+  padding: $gallery-padding;
+
+  .grid-item {
+    background: $grid-item-bg;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+}

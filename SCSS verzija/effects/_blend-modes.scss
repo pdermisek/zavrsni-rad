@@ -1,0 +1,21 @@
+@import '../base/mixins';
+
+.blend-container {
+  @include flex-center;
+  padding: 20px;
+
+  .blend-bg {
+    position: relative;
+    width: $blend-size;
+    height: $blend-size;
+    background: $blend-bg-red;
+
+    .blend-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: $blend-bg-blue;
+      mix-blend-mode: normal;
+      opacity: $blend-overlay-opacity;
+    }
+  }
+}

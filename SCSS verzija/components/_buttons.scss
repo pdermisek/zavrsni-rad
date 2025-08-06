@@ -1,0 +1,12 @@
+.transition-btn {
+  background: #fff;
+  color: $accent;
+  border: 2px solid $accent;
+  padding: $btn-padding;
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: $accent;
+    color: #fff;
+  }
+}
